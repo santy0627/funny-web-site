@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Erica+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    background-color: rgba(255, 191, 105);
+}
+
+.hero{
+    background: url(./images/background.png) rgba(255, 191, 105) no-repeat;
+    background-position: 80% 0%;
+    background-size: contain;
+    height: 50vh;
+}   
+
+.container-text{
+    font-size: 30px;
+}
+
+.container-text > h1 {
+    font-family: "Erica One", sans-serif;
+    font-size: 4em;
+}
+
+.container-text > button {
+    width: 30rem;
+    background-color: rgb(176, 239, 255);
+    font-weight: bold;
+}
+
+.text{
+    padding: 50px 150px 50px 150px;
+}
+
+.text > h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.products{
+    background-color: rgb(176, 239, 255);
+    height: max-content;
+}
+
+.container > .btn {
+    background-color: rgba(255, 191, 105);
+}
+
+.more-about{
+    background: url(./images/bg-grid.png) center no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 992px) {
+    .hero{
+        padding-bottom: 20px;
+    }
+
+    .container-text > button {
+    width: 225px;
+    }
+
+    .container-text{
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .container-text > h1 {
+        font-size: 80px;
+    }
+
+    .container-text > p {
+        width: 100% !important;
+        font-size: 20px;
+    }
+
+    .more-about{
+        flex-direction: column;
+    }
+
+    .moreabout-text{
+        width: 100% !important;
+    }
+}
+
+@media (max-width:450px) {
+    .text{
+        padding: 50px 10px 50px 10px;
+    }
+
+    .container-text > button {
+        width: 150px;
+    }
+}
